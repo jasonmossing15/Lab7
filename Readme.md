@@ -11,6 +11,7 @@ There are 4 functions within the header:
  - `getRightSensorValue();`
 The first function initializes the msp430 to read values from the three sensors by selecting the correct input pins. It also divides the clock in order to prevent loading.
 The other 3 functions return the appropriate ATD value. Here is the code that it uses:
+
 ```
 //clearing ENC and INCH bits enable changing to the proper settings.
 ADC10CTL0 &= ~ENC;
